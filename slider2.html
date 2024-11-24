@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+            box-sizing: border-box;       
+         }
+        .slider{
+            display:grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1.5fr));
+            justify-content:space-between;
+            align-items: center;
+            background-color:rosybrown;
+            border-radius: 20px;
+            margin: 20px;
+        }
+        .slide{
+            text-align: center;
+            background-color:seashell;
+            border-radius: 20px;
+        }
+        .success{
+           padding: 20px;
+        }
+        .success>h1, .success>h3{
+            padding-bottom: 20px;
+        }
+        .success>button{
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: maroon;
+            color: white;
+            border: none;
+        }
+        .image-loader{
+            display:grid;
+            grid-template-columns: repeat(auto-fit,minmax(200px,1.5fr));
+        }
+        .vertical-loader {
+    width: 300px; 
+    height: 400px;
+    overflow: hidden; 
+    position: relative;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    animation: scroll-vertical 10s linear infinite; /* Apply scrolling animation */
+}
+.image-container1{
+    animation: scroll-vertical1 10s linear infinite; /* Apply scrolling animation */
+}
+.image-container img,.image-container1 img  {
+    width: 100%;
+    height: auto;
+}
+
+/* Animation */
+@keyframes scroll-vertical {
+    0% {
+        transform: translateY(0); /* Start at the top */
+    }
+    100% {
+        transform: translateY(-50%); /* Move all images upward */
+    }
+}
+@keyframes scroll-vertical1{
+    0% {
+        transform: translateY(-50%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.vertical-loader:hover .image-container {
+    animation-play-state: paused;
+}
+    </style>
+</head>
+<body>
+    <div class="slider">
+    <div class="success">
+        <h1>We have thousands of success stories</h1>
+        <h3>Lorem ipsum dolor sit amet consectetur. Convallis id elit egoists aurice amet eu lactose Lucius intercom. Proin pellentesque vitae farer temper ultrices nulled</h3>
+        <button>Get start now</button>
+    </div>
+<div  class="image-loader">
+    <div class="vertical-loader">
+        <div class="image-container">
+          <div class="slide">
+            <img src="./img1.jpg" alt="Image 1">
+            <h2>25 August -2020</h2>
+            <h3>John & vero</h3>
+        </div>
+          <div class="slide">
+            <img src="./img2.jpg" alt="Image 2">
+            <h2>25 August -2020</h2>
+            <h3>John & vero</h3>
+        </div>
+          <div class="slide">
+            <img src="./img3.jpg" alt="Image 3">
+            <h2>25 August -2020</h2>
+            <h3>John & vero</h3>
+        </div>
+          <div class="slide">
+            <img src="./img4.jpg" alt="Image 4">
+            <h2>25 August -2020</h2>
+            <h3>John & vero</h3>
+        </div>
+          <div class="slide">
+            <img src="./img1.jpg" alt="Image 1">
+            <h2>25 August -2020</h2>
+            <h3>John & vero</h3>
+        </div>
+          <div class="slide">
+            <img src="./img2.jpg" alt="Image 2">
+            <h2>25 August -2020</h2>
+            <h3>John & vero</h3>
+        </div>
+          <div class="slide">
+            <img src="./img3.jpg" alt="Image 3">
+            <h2>25 August -2020</h2>
+            <h3>John & vero</h3>
+        </div>
+        <div class="slide">
+            <img src="./img4.jpg" alt="Image 4">
+            <h2>25 August -2020</h2>
+            <h3>John & vero</h3>
+        </div>
+    </div>
+    </div>
+    <div class="vertical-loader">
+        <div class="image-container1">
+            <div class="slide">
+                <img src="./img1.jpg" alt="Image 1">
+                <h2>25 August -2020</h2>
+                <h3>John & vero</h3>
+            </div>
+              <div class="slide">
+                <img src="./img2.jpg" alt="Image 2">
+                <h2>25 August -2020</h2>
+                <h3>John & vero</h3>
+            </div>
+              <div class="slide">
+                <img src="./img3.jpg" alt="Image 3">
+                <h2>25 August -2020</h2>
+                <h3>John & vero</h3>
+            </div>
+              <div class="slide">
+                <img src="./img4.jpg" alt="Image 4">
+                <h2>25 August -2020</h2>
+                <h3>John & vero</h3>
+            </div>
+              <div class="slide">
+                <img src="./img1.jpg" alt="Image 1">
+                <h2>25 August -2020</h2>
+                <h3>John & vero</h3>
+            </div>
+              <div class="slide">
+                <img src="./img2.jpg" alt="Image 2">
+                <h2>25 August -2020</h2>
+                <h3>John & vero</h3>
+            </div>
+              <div class="slide">
+                <img src="./img3.jpg" alt="Image 3">
+                <h2>25 August -2020</h2>
+                <h3>John & vero</h3>
+            </div>
+              <div class="slide">
+                <img src="./img4.jpg" alt="Image 4">
+                <h2>25 August -2020</h2>
+                <h3>John & vero</h3>
+            </div>
+          </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

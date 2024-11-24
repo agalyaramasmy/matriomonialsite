@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Regform</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        h2{ 
+            text-align: center;
+            padding: 20px;
+            color: brown;
+        }
+        
+        .form-control {
+          max-width: 400px; /
+        }
+        .input-group {
+          max-width: 400px; 
+        }
+        .box{
+            margin-top: -15px;
+            background-color: blueviolet;
+        }
+        
+      </style>
+</head>
+<body>
+    <div class="main">
+        <!-- <h2>RegistrationForm</h2>
+        <hr>
+    <div class="box">
+    <form class="row p-5 ms-5 needs-validation" novalidate>
+        <div class="row  pb-3">
+        <div class="col-md-6">
+          <label for="fname" class="form-label">First name</label>
+          <input type="text" class="form-control" id="fname" name="fname" placeholder="Enter First Name" required>
+         
+        </div>
+        <div class="col-md-6">
+          <label for="lname" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="lname" name="lname" placeholder="Enter First Name" required>
+        
+        </div>
+    </div>
+    <div class="row pb-3">
+        <div class="col-md-6">
+          <label for="uname" class="form-label">User name</label>
+          <input type="text" class="form-control" id="uname" name="uname" placeholder="Enter User Name" required>
+         
+        </div>
+        <div class="col-md-6">
+          <label for="pass" class="form-label">Password</label>
+          <input type="password" class="form-control" id="pass" name="pass"  placeholder="Enter First Name" required>
+        
+        </div>
+    </div>
+    <div class="row pb-3">
+        <div class="col-md-6">
+          <label for="mail" class="form-label">Email</label>
+          <input type="email" class="form-control" id="mail" name="mail" placeholder="Enter email" required>
+         
+        </div>
+        <div class="col-md-6">
+          <label for="contact" class="form-label">Contact</label>
+          <input type="text" class="form-control" id="contact" name="contact" placeholder="Enter contact no" required>
+        
+        </div>
+    </div>
+    <div class="row pb-3">
+        <div class="col-md-6">
+          <label for="date" class="form-label">Date of Birth</label>
+          <input type="date" class="form-control" id="date" name="date"   placeholder="dd-mm-yyyy" required>
+         
+        </div>
+        <div class="col-md-6">
+          <label for="city" class="form-label">City</label>
+          <input type="text" class="form-control" id="city" name="city" placeholder="Enter city" required>
+        
+        </div>
+    </div>
+    <div class="row pb-3">
+        <div class="col-md-6">
+          <label for="addr" class="form-label">Address</label>
+          <input type="text" class="form-control" id="addr"  name="addr" placeholder="Enter your address" required>
+         
+        </div>
+        <div class="col-md-6">
+            <label for="img" class="form-label">Image</label>
+            <input type="file" class="form-control" id="img" name="img" placeholder="Choose File" required>
+          
+          </div>
+       
+    </div>
+   
+    <div >
+        <label for="gender" >Gender</label><br>
+        <input type="radio"   id="male" name="male" >
+        <label for="male">Male</label>
+        <input type="radio"   id="female" name="female" >
+        <label for="female">Female</label>
+      </div> 
+ 
+     <div class="col-md-12">
+          <button class="btn btn-primary " type="submit">Submit </button>
+        </div>
+      </form>
+    </div>
+    </div> -->
+
+
+
+  <!-- reg formm------------------ -->
+  <h2>Create an Account</h2>
+  <form   action="#">
+      <div class="radio-group">
+          <label>
+              <input type="radio" name="profile" value="myself" required> This profile is for myself
+          </label>
+          <label>
+              <input type="radio" name="profile" value="relation"> My relationship with bride/groom
+          </label>
+          <select name="parent-relation">
+              <option value="Parent">Parent</option>
+              <option value="Guardian">Guardian</option>
+              <option value="Sibling">Sibling</option>
+          </select>
+      </div>
+
+      <div class="form-group">
+          <label for="email">Email (Username)</label>
+          <input type="email" id="email" name="email" placeholder="Email" required>
+      </div>
+      <div class="flex fg">
+      <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Password" required>
+      </div>
+
+      <div class="form-group">
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+      </div>
+    </div>
+    <div class="flex fg">
+      <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+      </div>
+
+      <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+      </div>
+    </div>
+    <div class="flex fg">
+      <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="e.g. +1 123 4567 890" required>
+      </div>
+
+      <div class="form-group">
+          <label for="address">Address</label>
+          <input type="text" id="address" name="address" placeholder="Address" required>
+      </div>
+    </div>
+    <div class="flex fg">
+      <div class="form-group">
+          <label for="country">Country</label>
+          <select id="country" name="country" required>
+              <option value="Australia" disabled selected>Select Country</option>
+              <option value="US">United States</option>
+              <option value="India">India</option>
+        
+          </select>
+      </div>
+
+      <div class="form-group">
+          <label for="state">State</label>
+          <input type="text" id="state" name="state" placeholder="State" required>
+      </div>
+
+      <div class="form-group">
+          <label for="city">City</label>
+          <input type="text" id="city" name="city" placeholder="City" required>
+      </div>
+    </div>
+      <div class="form-group">
+          <input type="checkbox" id="terms" name="terms" required>
+          <label for="terms">I have read and agree to the <a href="#">Terms & Conditions</a></label>
+      </div>
+   
+      <button type="submit">Submit</button>
+  </form>
+</div>
+</body>
+</html>

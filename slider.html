@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Basic setup for the slider container */
+.slider {
+  width: 100%;              /* Adjust as needed */
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Smooth transition */
+  width: 400%; /* Ensure it fits all slides (e.g., 4 slides would be 400%) */
+}
+
+.slide {
+  min-width: 25%; /* For a 4-image slider, each slide takes 25% of width */
+  transition: 0.5s;
+}
+
+/* Ensure images are responsive */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Animating the slider using keyframes */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(0); }
+  25% { transform: translateX(-100%); }
+  45% { transform: translateX(-100%); }
+  50% { transform: translateX(-200%); }
+  70% { transform: translateX(-200%); }
+  75% { transform: translateX(-300%); }
+  95% { transform: translateX(-300%); }
+  100% { transform: translateX(-300%); }
+}
+
+/* Applying the animation to the slides */
+.slides {
+  animation: slide 10s infinite both; /* Change the duration as needed */
+}
+
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+          <div class="slide"><img src="./image1.png" alt="Image 1"></div>
+          <div class="slide"><img src="./image2.png" alt="Image 2"></div>
+          <div class="slide"><img src="./image3.png" alt="Image 3"></div>
+          <div class="slide"><img src="./image4.png" alt="Image 4"></div>
+          <div class="slide"><img src="./image1.png" alt="Image 1"></div>
+          <div class="slide"><img src="./image2.png" alt="Image 2"></div>
+          <div class="slide"><img src="./image3.png" alt="Image 3"></div>
+          <div class="slide"><img src="./image4.png" alt="Image 4"></div>
+          <div class="slide"><img src="./image1.png" alt="Image 1"></div>
+          <div class="slide"><img src="./image2.png" alt="Image 2"></div>
+          <div class="slide"><img src="./image3.png" alt="Image 3"></div>
+          <div class="slide"><img src="./image4.png" alt="Image 4"></div>
+          <div class="slide"><img src="./image1.png" alt="Image 1"></div>
+          <div class="slide"><img src="./image2.png" alt="Image 2"></div>
+          <div class="slide"><img src="./image3.png" alt="Image 3"></div>
+          <div class="slide"><img src="./image4.png" alt="Image 4"></div>
+          <div class="slide"><img src="./image1.png" alt="Image 1"></div>
+          <div class="slide"><img src="./image2.png" alt="Image 2"></div>
+          <div class="slide"><img src="./image3.png" alt="Image 3"></div>
+          <div class="slide"><img src="./image4.png" alt="Image 4"></div>
+          <!-- Add more images as needed -->
+        </div>
+      </div>
+       
+</body>
+</html>

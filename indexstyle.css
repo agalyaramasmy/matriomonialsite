@@ -1,0 +1,371 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    
+}
+.main{
+    width:100%;
+}
+a {
+    all: unset !important;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 5%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nav1 h3 {
+    font-size: 1.5rem;
+    color: gray;
+}
+
+.nav2 {
+   
+    display: flex;
+    align-items: flex-start;
+    color: brown;
+    transition: left 0.3s ease-in-out;
+}
+#exitnav{
+    display: none;
+}
+.nav2 ul {
+    list-style-type: none;
+    gap: 30px;
+}
+
+.nav2 ul li {
+    font-size: 1rem;
+    cursor: pointer;
+}
+.nav2 ul li:hover{
+    background-color: #007bff;
+}
+.icon1{
+    margin-right: 5px;
+}
+.nav3 {
+    display: flex;
+    gap: 30px;
+}
+
+.nav3 li {
+    color: gray;
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav3 button {
+    padding: 5px 10px;
+    font-size: 1rem;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav3 button:hover {
+    background-color: #0056b3;
+}
+
+.baricon {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+.profileA{
+    margin: 50px 10px;
+}
+.profile{
+    padding-top: 30px;
+    margin-left:60px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1.5fr));
+    justify-content: space-evenly;
+    align-items: center;
+    gap:40px;
+}
+.profile div{
+    text-align: center;
+    
+}
+.info{
+   display:none;
+}
+.pimg{
+    width:200px;
+    height:200px;
+}
+.pimg:hover {
+    scale:1.2;
+}
+.pimg:hover .info{
+    display: block;
+}
+#top{
+background: url("./img5.png") left top repeat-x;
+
+    position: absolute;
+    top: -5px;
+    width: 100%;
+    height: 30px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+#bottom{
+    background: url("./img5.png") left top repeat-x;
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    height: 30px;
+}
+.position-relative {
+    position: relative !important;
+}
+.content h1{
+    width:50%;
+    padding:30px;
+    font-size:40px;
+    text-decoration: underline;
+}
+.container-fluid{
+    background-color:beige !important;
+    /* box-shadow:10px 3px bisque; */
+}
+
+.form-container {
+    width: 50%;
+    border: 2px solid black;
+    margin: 20px 0;
+}
+.form-container h1{
+    display: flex;
+    justify-content: space-between;
+    padding:20px 20px 0 20px;
+    background-color:grey; 
+}
+
+.fg{
+    justify-content: space-evenly;
+}
+
+/* slider css */
+.slider{
+    margin-top: 50px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1.5fr));
+    justify-content:space-between;
+    align-items: center;
+    background-color:rosybrown;
+    border-radius: 20px;
+    margin: 20px;
+  
+}
+.slide{
+    text-align: center;
+    background-color:seashell;
+    border-radius: 20px;
+}
+.success{
+   padding: 20px;
+}
+.success>h1, .success>h3{
+    padding-bottom: 20px;
+}
+.success>button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: maroon;
+    color: white;
+    border: none;
+}
+.image-loader{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1.5fr));
+}
+.vertical-loader {
+width: 300px; 
+height: 400px;
+overflow: hidden; 
+position: relative;
+border: 2px solid #ccc;
+border-radius: 10px;
+justify-self: center;
+}
+
+.image-container {
+display: flex;
+flex-direction: column; /* Stack images vertically */
+animation: scroll-vertical 10s linear infinite; /* Apply scrolling animation */
+}
+.image-container1{
+animation: scroll-vertical1 10s linear infinite; /* Apply scrolling animation */
+}
+.image-container img,.image-container1 img  {
+width: 100%;
+height: auto;
+}
+
+/* Animation */
+@keyframes scroll-vertical {
+0% {
+transform: translateY(0); /* Start at the top */
+}
+100% {
+transform: translateY(-50%); /* Move all images upward */
+}
+}
+@keyframes scroll-vertical1{
+0% {
+transform: translateY(-50%);
+}
+100% {
+transform: translateY(0);
+}
+}
+.vertical-loader:hover .image-container {
+animation-play-state: paused;
+}
+/* end of slider css */
+.card {
+    width: 18rem;
+}
+footer{ color:brown }
+footer a{
+    text-decoration: none;
+}
+footer:last-child{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.icon a{color:red;}
+.box{
+    display: none;
+    
+}
+.pack{padding:20px};
+.pack1{
+    /* width:300px; */
+    border:1px solid black;
+    background-color: blue;
+    height: max-content;
+}
+.basic{
+    background-color:purple;
+}
+.basic>i{
+    background-color: white;
+    color:navy;
+    font-size: 50px;
+    clip-path:circle(50%);
+    padding:10px;
+    margin-bottom:10px;
+}
+.basic h3{
+    background-color:palevioletred;
+}
+ /* media    query---------------------------------------------- */
+ @media screen and (max-width: 768px) {
+    .nav {
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .nav1 h3 {
+        font-size: 1.2rem;
+    }
+
+    .nav2 {
+       width:fit-content;
+       height:100vh;
+        position: fixed;
+        left: -100%; /* Initially hidden off-screen */
+        top:0; /* Adjust the top position as needed */
+        background-color: white;
+        flex-direction: column;
+        gap: 20px;
+        z-index: 999;
+        background-color:black;
+        opacity: 0.6;
+        padding:20px 30px;
+
+    }
+
+    .nav2.active {
+        left: 0; /* Slide in from the left */
+    }
+    #exitnav{
+        display: block;
+    }
+    .nav2 ul {
+        flex-direction: column;
+        align-items: flex-start;
+        color: azure;
+    }
+
+    .nav2 ul li {
+        font-size:30px;
+    }
+    .icon1{
+        margin-right: 20px;
+    }
+    .loader {
+        display: none;
+    }
+
+    .baricon {
+        display: block;
+    }
+}
+
+
+/* Mobile-specific adjustments */
+@media screen and (max-width: 480px) {
+    .main{
+        width:100%;
+    }
+    .nav {
+        /* padding: 10px; */
+        align-items: flex-start;
+    }
+
+    .nav1 h3 {
+        font-size: 1rem;
+    }
+
+    .nav2 ul li {
+        font-size: 30px;
+    }
+
+    #exitnav{
+        display: block;
+    }
+    .icon1{
+        margin-right: 20px;
+    }
+    .nav3 button {
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+    .loader {
+        display: none;
+     }
+    
+}

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./indexstyle.css" />
+  <script src="https://kit.fontawesome.com/d6287c36b0.js" crossorigin="anonymous"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Document</title>
+
+</head>
+
+<body>
+  <div class="main">
+    <!-- --------------------------------nav bar------------------------------------------------------ -->
+    <div id="header"></div>
+    <!-- --------------------------------reg form------------------------------------------------------ -->
+    <div id="box1" class="box flex">
+
+      <div class="form-container  ">
+
+        <h1>Register form<i class="fa-solid fa-xmark" id="close-form"></i></h1>
+        <form class="row p-5 needs-validation" novalidate>
+          <div class="row  pb-3">
+            <div class="col-md-6">
+              <label for="fname" class="form-label">First name</label>
+              <input type="text" class="form-control" id="fname" name="fname" placeholder="Enter First Name" required>
+
+            </div>
+            <div class="col-md-6">
+              <label for="lname" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="lname" name="lname" placeholder="Enter First Name" required>
+
+            </div>
+          </div>
+          <div class="row pb-3">
+            <div class="col-md-6">
+              <label for="uname" class="form-label">User name</label>
+              <input type="text" class="form-control" id="uname" name="uname" placeholder="Enter User Name" required>
+
+            </div>
+            <div class="col-md-6">
+              <label for="pass" class="form-label">Password</label>
+              <input type="password" class="form-control" id="pass" name="pass" placeholder="Enter First Name" required>
+
+            </div>
+          </div>
+          <div class="row pb-3">
+            <div class="col-md-6">
+              <label for="mail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="mail" name="mail" placeholder="Enter email" required>
+
+            </div>
+            <div class="col-md-6">
+              <label for="contact" class="form-label">Contact</label>
+              <input type="text" class="form-control" id="contact" name="contact" placeholder="Enter contact no"
+                required>
+
+            </div>
+          </div>
+          <div class="row pb-3">
+            <div class="col-md-6">
+              <label for="date" class="form-label">Date of Birth</label>
+              <input type="date" class="form-control" id="date" name="date" placeholder="dd-mm-yyyy" required>
+
+            </div>
+            <div class="col-md-6">
+              <label for="city" class="form-label">City</label>
+              <input type="text" class="form-control" id="city" name="city" placeholder="Enter city" required>
+
+            </div>
+          </div>
+          <div class="row pb-3">
+            <div class="col-md-6">
+              <label for="addr" class="form-label">Address</label>
+              <input type="text" class="form-control" id="addr" name="addr" placeholder="Enter your address" required>
+
+            </div>
+            <div class="col-md-6">
+              <label for="img" class="form-label">Image</label>
+              <input type="file" class="form-control" id="img" name="img" placeholder="Choose File" required>
+
+            </div>
+
+          </div>
+
+          <div>
+            <label for="gender">Gender</label><br>
+            <input type="radio" id="male" name="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="female">
+            <label for="female">Female</label>
+          </div>
+
+          <div class="col-md-12">
+            <button class="btn btn-primary " type="submit">Submit </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- --------------------------------carousel start------------------------------------------------------ -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide position-relative" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="./wee1.jpg" class="d-block w-100 vh-25 cimg" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+
+            <h1>The world's best matrimony service.</h1>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./we11.jpeg" class="d-block w-100 vh-25 cimg" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+
+            <h1> Trusted by over 35 Million Members</h1>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./we3.jpg" class="d-block w-100 vh-25 cimg" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+
+            <h1>Find your someone special</h1>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <!-------------------------------section-------------------- -->
+      <section id="top">
+        <div class="container-xl">
+          <div class="row">
+            <div class="col-md-12"></div>
+          </div>
+        </div>
+      </section>
+      <section id="bottom">
+        <div class="container-xl">
+          <div class="row">
+            <div class="col-md-12"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!----------------------------------------carousel end------------------------------------------------------ -->
+
+    <!----------------------------how it works-------------------------------------------------------------- -->
+    <div class="content">
+      <h1>We bringing people together with our platform in very easy way</h1>
+      <div class="container-fluid w-100  ">
+        <div class="row  p-3 w-100">
+          <div class="col-sm">
+            <img src="./signup.png" alt="signup" />
+            <h3>Signup</h3>
+            <h5>Register for free & <br>put up your Matrimony Profile</h5>
+
+          </div>
+          <div class="col-sm">
+            <img src="./connect.png" alt="connect" />
+            <h3>Connect</h3>
+            <h5>Select & Connect <br>with Matches you like</h5>
+          </div>
+          <div class="col-sm">
+            <img src="./interect.png" alt="interect" />
+            <h3>Interact</h3>
+            <h5>Become a Premium Member<br> & Start a Conversation</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- --------------------------view profile-------------------------------------------- -->
+    <div class="profileA">
+      <h2>Featured profiles</h2>
+
+      <div class="profile">
+        <div>
+          <img class="pimg" src="./gpp1.jpg">
+          <h4>Age:24</h4>
+          <button>View Profile</button>
+        </div>
+        <div>
+          <img class="pimg" src="./mp66.jpg">
+          <h4>Age:25</h4>
+          <button>View Profile</button>
+        </div>
+        <div>
+          <img class="pimg" src="./gpp3.jpg">
+          <h4>Age:22</h4>
+          <button>View Profile</button>
+        </div>
+        <div>
+          <img class="pimg" src="./mpp2.jpg">
+          <h4>Age:27</h4>
+          <button>View Profile</button>
+        </div>
+        <div>
+          <img class="pimg" src="./mpp3.jpg">
+          <h4>Age:24</h4>
+          <button>View Profile</button>
+        </div>
+        <div>
+          <img class="pimg" src="./gpp2.jpg">
+          <h4>Age:22</h4>
+          <button>View Profile</button>
+        </div>
+        <div>
+          <img class="pimg" src="./mpp4.jpg">
+          <h4>Age:24</h4>
+          <button>View Profile</button>
+        </div>
+        <div>
+          <img class="pimg" src="./gpp6.jpg">
+          <h4>Age:21</h4>
+          <button>View Profile</button>
+        </div>
+        <div>
+          <img class="pimg" src="./mpp6.webp">
+          <h4>Age:25</h4>
+          <button>View Profile</button>
+        </div>
+        <div>
+          <img class="pimg" src="./gpp5.jpg">
+
+          <h4>Age:23</h4>
+          <button>View Profile</button>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ------success story---------------------------------------------->
+    <div class="slider">
+      <div class="success">
+        <h1>We have thousands of success stories</h1>
+        <h3>Lorem ipsum dolor sit amet consectetur. Convallis id elit egoists aurice amet eu lactose Lucius intercom.
+          Proin pellentesque vitae farer temper ultrices nulled</h3>
+        <button>Get start now</button>
+      </div>
+      <div class="image-loader">
+        <div class="vertical-loader">
+          <div class="image-container">
+            <div class="slide">
+              <img src="./img1.jpg" alt="Image 1">
+              <h3>25 August -2020</h3>
+              <h4>John & vero</h4>
+            </div>
+            <div class="slide">
+              <img src="./img2.jpg" alt="Image 2">
+              <h2>25 August -2020</h2>
+              <h3>John & vero</h3>
+            </div>
+            <div class="slide">
+              <img src="./img3.jpg" alt="Image 3">
+              <h3>25 August -2020</h3>
+              <h4>John & vero</h4>
+            </div>
+            <div class="slide">
+              <img src="./img4.jpg" alt="Image 4">
+              <h3>25 August -2020</h3>
+              <h4>John & vero</h4>
+            </div>
+            <div class="slide">
+              <img src="./img1.jpg" alt="Image 1">
+              <h3>25 August -2020</h3>
+              <h4>John & vero</h4>
+            </div>
+            <div class="slide">
+              <img src="./img2.jpg" alt="Image 2">
+              <h3>25 August -2020</h3>
+              <h4>John & vero</h4>
+            </div>
+            <div class="slide">
+              <img src="./img3.jpg" alt="Image 3">
+              <h3>25 August -2020</h3>
+              <h4>John & vero</h4>
+            </div>
+            <div class="slide">
+              <img src="./img4.jpg" alt="Image 4">
+              <h3>25 August -2020</h3>
+              <h4>John & vero</h4>
+            </div>
+          </div>
+        </div>
+        <div class="vertical-loader loader">
+          <div class="image-container1">
+            <div class="slide">
+              <img src="./img1.jpg" alt="Image 1">
+              <h3>25 August -2020</h3>
+              <h4>John & vero</h4>
+            </div>
+            <div class="slide">
+              <img src="./img2.jpg" alt="Image 2">
+              <h3>25 August -2020</h3>
+              <h4>John & vero</h4>
+            </div>
+            <div class="slide">
+              <img src="./img3.jpg" alt="Image 3">
+              <h3>25 August -2020</h3>
+              <h4>John & vero</h4>
+            </div>
+            <div class="slide">
+              <img src="./img4.jpg" alt="Image 4">
+              <h3>25 August -2020</h3>
+              <h4>John & vero</h4>
+            </div>
+            <div class="slide">
+              <img src="./img1.jpg" alt="Image 1">
+              <h3>25 August -2020</h3>
+              <h4>John & vero</h4>
+            </div>
+            <div class="slide">
+              <img src="./img2.jpg" alt="Image 2">
+              <h3>25 August -2020</h3>
+              <h4>John & vero</h4>
+            </div>
+            <div class="slide">
+              <img src="./img3.jpg" alt="Image 3">
+              <h3>25 August -2020</h3>
+              <h4>John & vero</h4>
+            </div>
+            <div class="slide">
+              <img src="./img4.jpg" alt="Image 4">
+              <h3>25 August -2020</h3>
+              <h4>John & vero</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------------------------login form -->
+    <!-- <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <h2 class="text-center mb-4">Login</h2>
+                <form action="/login" method="post">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="username" name="username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <button type="submit" class="btn btn-primary">Login</button>
+                        <button type="button" class="btn btn-secondary" onclick="window.location.href='/register'">Register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div> -->
+
+    <!-----------------------------footer------------------------------------------------->
+    <div id="footer"></div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+  </div>
+</body>
+
+</html>

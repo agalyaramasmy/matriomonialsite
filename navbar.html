@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./indexstyle.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+    <div class="nav flex">
+        <div style="display:flex ; gap:10px">
+            <div class="baricon" onclick="toggleMenu()">
+            <!-- Hamburger icon -->
+            <span>&#9776;</span>
+        </div>
+        <div class="nav1">
+            <h3><i class="fa-solid fa-heart"></i>Matrimonial.com</h3>
+        </div>
+        
+        </div>
+        <div id="menu" class="nav2 flex">
+            <ul class="flex">
+            <li><i id="exitnav"  onclick="exitnav()"  class="fa-solid fa-xmark icon1"></i></li>
+            <li><i class="fa-solid fa-house icon1"></i>Home</li>
+            <li><a class="aa" href="./service.html"><i class="fa-solid fa-hospital-user icon1"></i>Wedding services</a></li>
+            <li><i class="fa-solid fa-address-book icon1"></i>Contact us</li>
+            <li><a href="./package.html"><i class="fa-solid fa-tag icon1"></i>Package</a></li>
+            <!-- <li><i class="fa-solid fa-cart-shopping"></i></i>Shop</li> -->
+            </ul>
+        </div>
+        <div class="nav3 flex">
+       
+          <li>Sign In</li>
+          <button onclick="formchng()" >Register</button>
+        </div>
+    </div>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
